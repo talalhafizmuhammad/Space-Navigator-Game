@@ -109,15 +109,12 @@ while running:
                 particles.remove(particle)
             else:
                 particle.draw(screen)
-
-        # Spawn asteroids
         asteroid_timer += 1
         if asteroid_timer >= asteroid_delay:
             asteroid_timer = 0
             asteroids.append(Asteroid())
             asteroid_delay = max(15, 30 - score // 500)
 
-        # Update asteroids
         for asteroid in asteroids[:]:
             asteroid.update()
             asteroid.draw(screen)
@@ -153,4 +150,3 @@ while running:
     clock.tick(60)
 
 pygame.quit()
-sys.exit()
