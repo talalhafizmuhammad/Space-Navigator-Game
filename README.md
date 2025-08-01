@@ -44,5 +44,3 @@ A fast-paced, minimalistic space dodging game built with **Python + Pygame**. Na
 Install with:
 ```bash
 pip install pygame
-```bash
-pip install pygame
